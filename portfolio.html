@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nouh D H M Hasan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="interests.html">Technical Interests</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Projects</h2>
+            <div class="portfolio-grid">
+                <!-- Secure File Sharing Application -->
+                <div class="portfolio-item" data-description="A secure file sharing application that implements end-to-end encryption and role-based access control." data-technologies="Python, PyCryptodome, SQLite">
+                    <img src="images/secure-file-sharing.png" alt="Secure File Sharing Application">
+                    <h3>Secure File Sharing Application</h3>
+                    <p>End-to-end encrypted file sharing with robust access control.</p>
+                </div>
+
+                <!-- Network Monitoring System -->
+                <div class="portfolio-item" data-description="A comprehensive network monitoring and intrusion detection system." data-technologies="Python, Wireshark, Snort">
+                    <img src="images/network-monitoring.png" alt="Network Monitoring System">
+                    <h3>Network Monitoring System</h3>
+                    <p>Real-time network traffic analysis and threat detection.</p>
+                </div>
+
+                <!-- Vulnerability Assessment Tool -->
+                <div class="portfolio-item" data-description="A tool for conducting vulnerability assessments and penetration testing." data-technologies="Python, Nmap, Metasploit">
+                    <img src="images/vulnerability-assessment.png" alt="Vulnerability Assessment Tool">
+                    <h3>Vulnerability Assessment Tool</h3>
+                    <p>Automated security testing and vulnerability reporting.</p>
+                </div>
+
+                <!-- Web Application -->
+                <div class="portfolio-item" data-description="A full-stack web application with user authentication and database integration." data-technologies="HTML, CSS, JavaScript, Node.js, MongoDB">
+                    <img src="images/web-application.png" alt="Web Application">
+                    <h3>Web Application</h3>
+                    <p>Modern web application with responsive design.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <!-- Modal content will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nouh D H M Hasan</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
